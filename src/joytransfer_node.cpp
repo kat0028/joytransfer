@@ -52,7 +52,7 @@ void JoyTransfer::joyCallback(const sensor_msgs::Joy::ConstPtr& joy)
 
 
     vel_command.data=(1-joy->axes[forward_])*15+(joy->buttons[reverse_])*-30;
-    ang_command.data=(joy->axes[steering_])*40;
+    ang_command.data=(joy->axes[steering_])*-40;
 
 
   
